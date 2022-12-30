@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Hero from "../components/Home/Hero";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import client from "../lib/apolloClient";
 import { navQuery, indexPageQuery } from "../lib/queries";
 
