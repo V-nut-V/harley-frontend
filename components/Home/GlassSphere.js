@@ -21,13 +21,13 @@ function GlassSphere({
         step: 0.1,
       },
       thickness: {
-        value: 0.24,
+        value: 0.2,
         min: 0,
         max: 1,
         step: 0.01,
       },
       roughness: {
-        value: 0.72,
+        value: 0,
         min: 0,
         max: 1,
         step: 0.01,

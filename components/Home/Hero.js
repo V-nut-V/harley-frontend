@@ -24,7 +24,7 @@ function Hero({ pageData }) {
           fov: 45,
           near: 0.1,
           far: 2000,
-          position: [0, 0, 15],
+          position: [0, 0, 16],
         }}
       >
         <ThreeDScence />
