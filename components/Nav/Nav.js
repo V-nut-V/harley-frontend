@@ -4,7 +4,7 @@ import Link from "next/link";
 import AnimatedSVGBlob from "./AnimatedSVGBlob";
 import { ReactSVG } from "react-svg";
 import MusicPlayer from "./MusicPlayer";
-import { NavWrapper, SocialLink, BlobWrapper } from "./index.style";
+import { NavWrapper, SocialLink, BlobWrapper } from "./Nav.style";
 import CardDetails from "./CardDetails";
 
 function Nav({ navData }) {
