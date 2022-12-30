@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import Image from "next/image";
 
 function CardDetails({ cardWidth, navData, onClickOutside }) {
   const ref = useRef(null);
@@ -20,11 +19,10 @@ function CardDetails({ cardWidth, navData, onClickOutside }) {
 
   return (
     <div ref={ref} className="card-detail glass" style={{ width: cardWidth + "px" }}>
-      <Image
+      <img
         src={navData.Profile.data.attributes.url}
         width={cardWidth - 30}
         height={cardWidth - 30}
-        priority
         alt={navData.Profile.data.attributes.name}
       />
       <h3>{navData.Name}</h3>

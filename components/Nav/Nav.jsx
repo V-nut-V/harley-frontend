@@ -28,11 +28,10 @@ function Nav({ navData }) {
       <NavWrapper>
         <div className="container">
           <div className="card glass" ref={card}>
-            <Image
+            <img
               src={navData.Profile.data.attributes.url}
               width={70}
               height={70}
-              priority
               alt={navData.Profile.data.attributes.name}
               onClick={() => setShowCard((prev) => !prev)}
             />
