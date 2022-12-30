@@ -58,6 +58,7 @@ export default function ThreeDScence() {
             y={2.1}
             z={-2}
             defaultScale={0.6}
+            defaultRoughness={1}
             defaultColor="white"
           />
           <Sphere
@@ -66,6 +67,7 @@ export default function ThreeDScence() {
             y={1.1}
             z={-2}
             defaultScale={0.7}
+            defaultRoughness={1}
             defaultColor="white"
           />
           <Sphere
@@ -74,6 +76,7 @@ export default function ThreeDScence() {
             y={-1.1}
             z={-1.4}
             defaultScale={0.7}
+            defaultRoughness={1}
             defaultColor="white"
           />
           <GlassSphere

@@ -49,5 +49,6 @@ export async function getStaticProps() {
       navData,
       pageData,
     },
+    revalidate: 10,
   };
 }

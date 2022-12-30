@@ -1,7 +1,7 @@
 import { useControls } from "leva";
 import colors from "../../config/colors";
 
-function Sphere({ name = "Sphere", x = 0, y = 0, z = 0, defaultColor = colors.main, defaultScale = 1 }) {
+function Sphere({ name = "Sphere", x = 0, y = 0, z = 0, defaultRoughness = 0.5, defaultColor = colors.main, defaultScale = 1 }) {
   const { position, color, scale, roughness, metalness } = useControls(name, {
     position: {
       value: { x, y, z },
@@ -15,7 +15,7 @@ function Sphere({ name = "Sphere", x = 0, y = 0, z = 0, defaultColor = colors.ma
     },
     color: defaultColor,
     roughness: {
-      value: 0.5,
+      value: defaultRoughness,
       min: 0.1,
       max: 1,
       step: 0.1,
