@@ -13,6 +13,30 @@ export const HeroWrapper = styled.section`
   margin: 0 auto;
   align-items: center;
 
+  @media only screen and (max-width: 900px) {
+    width: 100%;
+    grid-template-columns: 1fr;
+    align-items: flex-end;
+    
+    .content {
+      position: relative;
+      width: 90%;
+      margin: 0 auto;
+      z-index: 2;
+      padding-bottom: 80px;
+
+      p {
+        max-width: 350px;
+      }
+    }
+
+    .content + div {
+      position: absolute!important;
+      z-index: 1;
+      top: -10%;
+    }
+  }
+
   .content {
     padding-top: 50px;
     

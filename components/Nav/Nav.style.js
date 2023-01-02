@@ -14,7 +14,7 @@ const slideUp = keyframes`
 `;
 
 export const BlobWrapper = styled.div`
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -44,7 +44,7 @@ export const NavWrapper = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 10;
 
   .container {
     position: relative;

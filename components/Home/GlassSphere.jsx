@@ -33,7 +33,7 @@ function GlassSphere({
         step: 0.01,
       },
       transmission: {
-        value: 1,
+        value: 0.98,
         min: 0,
         max: 1,
         step: 0.01,
