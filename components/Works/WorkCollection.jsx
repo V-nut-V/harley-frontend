@@ -41,16 +41,18 @@ function WorkCollection({ activeWorksData }) {
           </div>
         ))}
       </WorkCollectionWrapper>
-      <Modal
-        title={workDetail.attributes.Title}
-        open={isModalOpen}
-        onOk={() => setIsModalOpen(false)}
-        onCancel={() => setIsModalOpen(false)}
-      >
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-      </Modal>
+      {workDetail && (
+        <Modal
+          title={workDetail.attributes.Title}
+          open={isModalOpen}
+          onOk={() => setIsModalOpen(false)}
+          onCancel={() => setIsModalOpen(false)}
+        >
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+        </Modal>
+      )}
     </>
   );
 }
