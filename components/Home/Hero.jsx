@@ -8,12 +8,21 @@ import ThreeDScence from "./ThreeDScence";
 function Hero({ pageData }) {
   const [hideControlBoard, setHideControlBoard] = useState(true);
 
+  const handleScroll = () => {
+    console.log("Clicked");
+    const tabs = document.getElementById("category_tabs");
+    console.log(tabs)
+    if(tabs) tabs.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <HeroWrapper>
       <div className="content">
-        <h1>{pageData.Title}</h1>
+        <h1 onDoubleClick={() => setHideControlBoard((prev) => !prev)}>
+          {pageData.Title}
+        </h1>
         <p>{pageData.Description}</p>
-        <button onClick={() => setHideControlBoard((prev) => !prev)}>
+        <button onClick={handleScroll}>
           Portfolio <BsFillCaretDownFill />
         </button>
       </div>

@@ -11,7 +11,6 @@ import { WorkDetailWrapper } from "./WorkDetail.style";
 function WorkDetail({ workDetail, setOpenWorkDetail, onClickOutside }) {
   const ref = useRef(null);
   const slider = useRef(null);
-  console.log(workDetail);
 
   useEffect(() => {
     const handleClickOutside = (event) => {

@@ -1,14 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { WorkCollectionWrapper } from "./WorkCollectionWrapper";
 import WorkDetail from "./WorkDetail";
 
 function WorkCollection({ activeWorksData }) {
   const [workDetail, setWorkDetail] = useState();
   const [openWorkDetail, setOpenWorkDetail] = useState(false);
-
-  useEffect(() => {
-    console.log("workDetail", workDetail);
-  }, [workDetail]);
 
   return (
     <>

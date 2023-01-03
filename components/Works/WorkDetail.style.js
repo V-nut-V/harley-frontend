@@ -18,7 +18,7 @@ export const WorkDetailWrapper = styled.div`
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   z-index: 11;
-  max-width: 1200px;
+  max-width: 950px;
   width: 90%;
   max-height: 80vh;
   padding: 20px;

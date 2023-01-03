@@ -9,7 +9,7 @@ import {
 const Tabs = ({ active, setActive }) => {
   return (
     <TabsWrapper>
-      <div className="container">
+      <div className="container" id="category_tabs">
         <button
           className={active === "all" ? "active" : undefined}
           onClick={() => setActive("all")}
