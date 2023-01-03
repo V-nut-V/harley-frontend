@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, {keyframes} from "styled-components";
 import hexRgb from "hex-rgb";
 
 const slideUp = keyframes`
@@ -18,7 +18,7 @@ export const BlobWrapper = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-
+  
   .container {
     position: relative;
     display: flex;
@@ -131,15 +131,10 @@ export const SocialLink = styled.div`
     }
 
     svg {
-      filter: drop-shadow(
-        1px 2px 3px
-          rgb(
-            ${(props) => {
-                const color = hexRgb(props.color);
-                return color.red + " " + color.green + " " + color.blue;
-              }} / 0.5
-          )
-      );
+      filter: drop-shadow(1px 2px 3px rgb(${(props) => {
+        const color = hexRgb(props.color);
+        return color.red + " " + color.green + " " + color.blue
+      }} / 0.5));
     }
 
     &::after {
@@ -153,15 +148,10 @@ export const SocialLink = styled.div`
       height: 5px;
       border-radius: 10px;
       background-color: ${(props) => props.color || "black"};
-      filter: drop-shadow(
-        1px 1px 2px
-          rgb(
-            ${(props) => {
-                const color = hexRgb(props.color);
-                return color.red + " " + color.green + " " + color.blue;
-              }} / 0.5
-          )
-      );
+      filter: drop-shadow(1px 1px 2px rgb(${(props) => {
+        const color = hexRgb(props.color);
+        return color.red + " " + color.green + " " + color.blue
+      }} / 0.5));
     }
   }
 `;
