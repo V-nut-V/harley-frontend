@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { WorkCollectionWrapper } from "./WorkCollectionWrapper";
-import { Button, Modal } from "antd";
+import WorkDetail from "./WorkDetail";
 
 function WorkCollection({ activeWorksData }) {
   const [workDetail, setWorkDetail] = useState();
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [openWorkDetail, setOpenWorkDetail] = useState(false);
 
   useEffect(() => {
     console.log("workDetail", workDetail);
@@ -19,7 +19,7 @@ function WorkCollection({ activeWorksData }) {
             className="glass"
             onClick={() => {
               setWorkDetail(work);
-              setIsModalOpen(true);
+              setOpenWorkDetail(true);
             }}
           >
             <div className="image-wrapper">
@@ -41,17 +41,12 @@ function WorkCollection({ activeWorksData }) {
           </div>
         ))}
       </WorkCollectionWrapper>
-      {workDetail && (
-        <Modal
-          title={workDetail.attributes.Title}
-          open={isModalOpen}
-          onOk={() => setIsModalOpen(false)}
-          onCancel={() => setIsModalOpen(false)}
-        >
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-        </Modal>
+      {openWorkDetail && (
+        <WorkDetail
+          workDetail={workDetail}
+          setOpenWorkDetail={setOpenWorkDetail}
+          onClickOutside={() => setOpenWorkDetail(false)}
+        />
       )}
     </>
   );

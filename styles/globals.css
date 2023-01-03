@@ -49,6 +49,12 @@ body {
   background: #3367FD;
 }
 
+/* ant design style overwrite */
+.slick-dots.slick-dots-bottom li button {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  border-radius: 2px;
+}
+
 /* Heightly reused global class style */
 .glass {
   position: relative;

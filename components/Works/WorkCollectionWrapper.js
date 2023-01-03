@@ -6,6 +6,18 @@ export const WorkCollectionWrapper = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   padding-top: 20px;
+  padding-bottom: 40px;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 1100px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  @media only screen and (max-width: 650px) {
+    grid-template-columns: 1fr;
+  }
 
   .glass {
     padding: 14px;
