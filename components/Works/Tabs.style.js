@@ -23,15 +23,21 @@ export const TabsWrapper = styled.div`
       background-color: #cbd5df;
       border: 2px solid #808d9e;
       color: #808d9e;
-      padding: 6px 10px;
+      padding: 8px 12px;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
       margin-left: 4px;
       cursor: pointer;
-      font-size: 14px;
+      font-size: 18px;
+
+      @media only screen and (max-width: 680px) {
+        font-size: 14px;
+        padding: 6px 10px;
+      }
 
       svg {
         margin-right: 5px;
+        font-size: 16px;
       }
 
       &.active {

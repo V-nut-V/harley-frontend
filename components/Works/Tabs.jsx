@@ -14,25 +14,25 @@ const Tabs = ({ active, setActive }) => {
           className={active === "all" ? "active" : undefined}
           onClick={() => setActive("all")}
         >
-          <FaThLarge fontSize={13} /> All
+          <FaThLarge /> All
         </button>
         <button
           className={active === "development" ? "active" : undefined}
           onClick={() => setActive("development")}
         >
-          <FaHammer fontSize={13} /> Develop
+          <FaHammer /> Develop
         </button>
         <button
           className={active === "design" ? "active" : undefined}
           onClick={() => setActive("design")}
         >
-          <FaPencilRuler fontSize={13} /> Design
+          <FaPencilRuler /> Design
         </button>
         <button
           className={active === "craft" ? "active" : undefined}
           onClick={() => setActive("craft")}
         >
-          <FaPaintBrush fontSize={13} /> Craft
+          <FaPaintBrush /> Craft
         </button>
       </div>
     </TabsWrapper>

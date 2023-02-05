@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["harley-space.syd1.digitaloceanspaces.com"],
+    domains: ["harley-space.syd1.digitaloceanspaces.com, harleylin.me"],
     remotePatterns: [
       {
         protocol: "https",
