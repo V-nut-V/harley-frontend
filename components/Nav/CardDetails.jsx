@@ -24,13 +24,7 @@ function CardDetails({ cardWidth, navData, onClickOutside }) {
       className="card-detail glass"
       style={{ width: cardWidth + "px" }}
     >
-      {/* <img
-        src={navData.Profile.data.attributes.url}
-        width={cardWidth - 30}
-        height={cardWidth - 30}
-        alt={navData.Profile.data.attributes.name}
-      /> */}
-      <Image
+      <img
         src={navData.Profile.data.attributes.url}
         width={cardWidth - 30}
         height={cardWidth - 30}
